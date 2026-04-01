@@ -1,8 +1,8 @@
 ---
 title: "L01 Review"
 subtitle: "Data Science 3 with R (STAT 301-3)"
-author: "YOUR NAME"
-pagetitle: "L01 YOUR NAME"
+author: "Ria Zaman"
+pagetitle: "L01 Ria Zaman"
 date: today
 
 format:
@@ -28,7 +28,7 @@ citation-location: margin
 
 To link to your github **repo**sitory, appropriately edit the example link below. Meaning replace `https://your-github-repo-url` with your github repo url. Suggest verifying the link works before submitting.
 
-[https://your-github-repo-url](https://your-github-repo-url)
+[Ria's Github Repo Link](https://github.com/stat301-3-2026-spring/l01-review-riazaman-1)
 :::
 
 ## Overview
@@ -45,8 +45,11 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
-YOUR SOLUTION HERE
+1. Collect/Download Data 
+2. Split Data
+3. Train Model
+4. Test Model 
+5. Analysis of Model
 
 :::
 
@@ -56,8 +59,8 @@ Explain the difference between supervised and unsupervised learning.
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
-YOUR SOLUTION HERE
+Supervised learning is task driven and used for pre categorized data. It involves regression and classification problems and there is a target variable. 
+Unsupervised learning is more data driven and uses patters to categorize data into groups. 
 
 :::
 
@@ -69,8 +72,7 @@ In general, we can classify a model by its purpose into 1 of the 3 categories be
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
-YOUR SOLUTION HERE
+Generally describe relationships or trends in the data. Linear and parametric models are good for this.
 
 :::
 
@@ -78,8 +80,9 @@ YOUR SOLUTION HERE
 
 ::: {.callout-tip icon="false"}
 ## Solution
+Unpack the how and why of what inputs affect the target variable. 
+Use the data to see how a variable x influences another variable y. 
 
-YOUR SOLUTION HERE
 
 :::
 
@@ -87,8 +90,8 @@ YOUR SOLUTION HERE
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
-YOUR SOLUTION HERE
+Use data (predictors) to predict the outcome of a target variable. 
+Not understand the how or why, just use data to try to predict the outcome. 
 
 :::
 
@@ -102,8 +105,7 @@ What does it mean to be a mechanistic model?
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
-YOUR SOLUTION HERE
+Mechanistic models explain why a system behaves a certain way using 
 
 :::
 
