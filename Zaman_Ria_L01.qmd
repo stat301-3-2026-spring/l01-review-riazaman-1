@@ -26,8 +26,6 @@ citation-location: margin
 ::: {.callout-tip icon="false"}
 ## Github Repo Link
 
-To link to your github **repo**sitory, appropriately edit the example link below. Meaning replace `https://your-github-repo-url` with your github repo url. Suggest verifying the link works before submitting.
-
 [Ria's Github Repo Link](https://github.com/stat301-3-2026-spring/l01-review-riazaman-1)
 :::
 
@@ -45,11 +43,12 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 
 ::: {.callout-tip icon="false"}
 ## Solution
-1. Collect/Download Data 
-2. Split Data
-3. Train Model
-4. Test Model 
-5. Analysis of Model
+1. Collect and Clean Data: check for missingness, make sure data is tidy
+2. Identify Features and Labels: identify target variables, conduct preliminary EDA to identify features or attributes that could impact the target variable
+3. Split Data: split data into training and testing data. Resampling methods can also be implemented 
+4. Train Model: Formulate recipes and feed the data through a supervised learning algorithm. Tuning parameters can also be explored here
+5. Validate and Test Model: assess the model on new, unseen data and generate predictions to compare to the true values of the target variable. Performance metrics can be used here like accuracy or RMSE to determine effectiveness of the model
+6. Analysis: analyze which model performed the best and why. Analyze the data and how this can be used for real world purposes
 
 :::
 
@@ -59,8 +58,10 @@ Explain the difference between supervised and unsupervised learning.
 
 ::: {.callout-tip icon="false"}
 ## Solution
-Supervised learning is task driven and used for pre categorized data. It involves regression and classification problems and there is a target variable. 
-Unsupervised learning is more data driven and uses patters to categorize data into groups. 
+Supervised learning is task-driven and works with pre categorized data. It is commonly used for regression and classification problems, where the goal is to predict an outcome based on certain variables.
+
+Unsupervised learning is data-driven and works with unlabeled data. It identifies underlying patterns or structures in the data, such as grouping observations into clusters without predefined categories.
+
 
 :::
 
@@ -72,7 +73,7 @@ In general, we can classify a model by its purpose into 1 of the 3 categories be
 
 ::: {.callout-tip icon="false"}
 ## Solution
-Generally describe relationships or trends in the data. Linear and parametric models are good for this.
+Generally describe relationships or trends in the data. Linear and parametric models are often good for this. The goal is to summarize and understand patterns in the data, rather than make predictions or causal claims.
 
 :::
 
@@ -80,9 +81,7 @@ Generally describe relationships or trends in the data. Linear and parametric mo
 
 ::: {.callout-tip icon="false"}
 ## Solution
-Unpack the how and why of what inputs affect the target variable. 
-Use the data to see how a variable x influences another variable y. 
-
+These models aim to unpack the how and why of the inputs affect the target variable. They use data to understand how a variable influences another variable. These models are used to draw conclusions about a population and often involve statistical significance and hypothesis testing.
 
 :::
 
@@ -90,8 +89,7 @@ Use the data to see how a variable x influences another variable y.
 
 ::: {.callout-tip icon="false"}
 ## Solution
-Use data (predictors) to predict the outcome of a target variable. 
-Not understand the how or why, just use data to try to predict the outcome. 
+Use data (predictors) to predict the outcome of a target variable. The focus is not so much understanding the how or why, but using data to try to predict the outcome as accurately as possible.
 
 :::
 
@@ -105,7 +103,8 @@ What does it mean to be a mechanistic model?
 
 ::: {.callout-tip icon="false"}
 ## Solution
-Mechanistic models explain why a system behaves a certain way using 
+Mechanistic models explain why a system behaves a certain way using theories or known relationships. For example, a mechanistic model can predict how far a baseball will go as it follows the trajectory of a parabola and it can be understood using physics. They are based on assumptions about how the data is generated and focus on understanding the true process behind the data.
+
 
 :::
 
@@ -115,8 +114,7 @@ What does it mean to be an empirically driven model?
 
 ::: {.callout-tip icon="false"}
 ## Solution
-
-YOUR SOLUTION HERE
+Empirically driven models rely on patterns found in the data rather than underlying theory. They use the data to learn relationships between variables, focusing on fitting the data well than explaining why those relationships exist.
 
 :::
 
@@ -126,8 +124,8 @@ How does the mechanistic and empirically driven model terminology relate to the 
 
 ::: {.callout-tip icon="false"}
 ## Solution
+Mechanistic models are more likely parametric, which is based on the assumption that the data follows a known and predefined mathematical form or distribution. Empirically driven models are often nonparametric, which means they do not assume any fixed functional form. The model structure grows with the dataset, so nonparametric models are more flexible.
 
-YOUR SOLUTION HERE
 
 :::
 
@@ -137,8 +135,8 @@ In general, is a mechanistic or empirically driven model easier to interpret? Ex
 
 ::: {.callout-tip icon="false"}
 ## Solution
+Mechanistic models are generally easier to interpret because they are based on known relationships/theories and have a clear structure. This makes it easier to understand how each input affects the output. Empirically driven models can be more complex and less transparent.
 
-YOUR SOLUTION HERE
 
 :::
 
@@ -148,8 +146,8 @@ How does mechanistic and empirically driven model terminology relate to the idea
 
 ::: {.callout-tip icon="false"}
 ## Solution
+Mechanistic models are less flexible because they rely on predefined assumptions. Empirically driven models are more flexible since they adapt to patterns in the data and aren't confined to a fixed form.
 
-YOUR SOLUTION HERE
 
 :::
 
@@ -159,8 +157,8 @@ Describe the bias-variance trade-off when considering the use of a mechanistic o
 
 ::: {.callout-tip icon="false"}
 ## Solution
+Mechanistic models tend to have higher bias because they make strong assumptions but they have a lower variance. Empirical models tend to have lower bias but higher variance because can be more flexible.
 
-YOUR SOLUTION HERE
 
 :::
 
@@ -171,7 +169,9 @@ Explain the difference between a regression and classification machine learning 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Regression predicts continuous values using independent variables, such as predicting price of houses. 
+
+Classification predicts categories by using a decision boundary to separate the data into the different classes. 
 
 :::
 
@@ -181,8 +181,8 @@ When splitting the data, why is it useful to stratify by the outcome/target vari
 
 ::: {.callout-tip icon="false"}
 ## Solution
+It makes sure that the training and testing sets maintain the same class proportion as the original dataset. This is important as it ensures the model trains on a accurately distributed dataset and it also leads to improved model accuracy. 
 
-YOUR SOLUTION HERE
 
 :::
 
@@ -193,7 +193,10 @@ Briefly describe how v-fold cross validation with repeats is used to estimate te
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+In v-fold cross validation, the data is split into v equal parts, which are called folds. The model is trained on v-1 folds and tested on the remaining fold. It is repeated until each fold acts as the testing fold, and if specified, the whole resampling method is repeated.  
+
+V-fold cross validation is used because it provides a more reliable estimate of how the model would perform on new data and it reduces variability, while preventing overfitting to a particular training dataset. 
+
 
 :::
 
@@ -204,7 +207,7 @@ When might we use a bootstrap resampling procedure instead of v-fold cross valid
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+We might use a bootstrap resampling procedure instead of v-fold cross-validation when the dataset is small. In bootstrap sampling, we repeatedly sample with replacement from the dataset to create many training sets, allowing each observation to be used multiple times. It is also used when the population distribution is unknown, or when parametric assumptions (like normality) cannot be me. 
 
 :::
 
@@ -214,8 +217,9 @@ Briefly describe model tuning and why we use it.
 
 ::: {.callout-tip icon="false"}
 ## Solution
+Model tuning is the process of selecting the best values for a model’s hyperparameters by testing a range of values for each hyperparameter and evaluating different combinations.
 
-YOUR SOLUTION HERE
+Model tuning is used to improve the model’s performance by ensuring that the optimal hyperparameters are chosen. This helps reduce overfitting or underfitting.
 
 :::
 
@@ -225,8 +229,8 @@ What are two common performance metrics when dealing with a regression ML proble
 
 ::: {.callout-tip icon="false"}
 ## Solution
+RMSE, MAE
 
-YOUR SOLUTION HERE
 
 :::
 
@@ -235,8 +239,7 @@ What are two common performance metrics when dealing with a classification ML pr
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+Accuracy and ROC AUC
 :::
 
 ### Question 11
@@ -249,8 +252,8 @@ A company with a subscription based service (for example Netflix, Disney+, New Y
 
 ::: {.callout-tip icon="false"}
 ## Solution
+Inferential. We are trying to see if a higher number of service calls impacts a customer's likelihood of churn in the next month, hence the goal is to understand the relationship between these two variables. 
 
-YOUR SOLUTION HERE
 
 :::
 
@@ -258,8 +261,8 @@ YOUR SOLUTION HERE
 
 ::: {.callout-tip icon="false"}
 ## Solution
+Prediction. The goal here is to use the given data to predict the likelihood that a customer will churn in the next month. 
 
-YOUR SOLUTION HERE
 
 :::
 
