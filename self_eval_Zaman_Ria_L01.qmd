@@ -1,8 +1,10 @@
 ---
-title: "L01 Review"
-subtitle: "Data Science 3 with R (STAT 301-3)"
-author: "Ria Zaman"
-pagetitle: "L01 Ria Zaman"
+title: "Self Evaluation L01 Review"
+subtitle: |
+  | Data Science 2 with R 
+  | STAT 301-2
+author: "YOUR NAME"
+pagetitle: "Self Evaluation PQ2 YOUR NAME"
 date: today
 
 format:
@@ -17,10 +19,11 @@ format:
 
 execute:
   warning: false
+  error: true
 
 from: markdown+emoji
 reference-location: margin
-citation-location: margin   
+citation-location: margin 
 ---
 
 ::: {.callout-tip icon="false"}
@@ -50,6 +53,18 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 5. Validate and Test Model: assess the model on new, unseen data and generate predictions to compare to the true values of the target variable. Performance metrics can be used here like accuracy or RMSE to determine effectiveness of the model
 6. Analysis: analyze which model performed the best and why. Analyze the data and how this can be used for real world purposes
 
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+I feel like we went over this a lot last quarter, so I remembered the steps very clearly. I combined a few of the steps written out in the solutions like collect and clean data, resampling and splitting, feature engineering and tuning, etc; however, I feel that my understanding was pretty much there and I didn't have to look anything up. 
+
+:::
+
 :::
 
 ### Question 2
@@ -62,6 +77,17 @@ Supervised learning is task-driven and works with pre categorized data. It is co
 
 Unsupervised learning is data-driven and works with unlabeled data. It identifies underlying patterns or structures in the data, such as grouping observations into clusters without predefined categories.
 
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+I felt quite confident answering this question because it directly tested a concept we covered a lot in class and quizzes last quarter. I think I was able to clearly recall the key differences between supervised and unsupervised learning and explain them concisely. 
+
+:::
 
 :::
 
@@ -92,6 +118,20 @@ These models aim to unpack the how and why of the inputs affect the target varia
 Use data (predictors) to predict the outcome of a target variable. The focus is not so much understanding the how or why, but using data to try to predict the outcome as accurately as possible.
 
 :::
+
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+I was pretty confident in answering these because I remembered them from last quarter and we also had a nice reminder of what they were with examples in class.  
+
+:::
+
 
 ### Question 4 
 
@@ -159,8 +199,20 @@ Describe the bias-variance trade-off when considering the use of a mechanistic o
 ## Solution
 Mechanistic models tend to have higher bias because they make strong assumptions but they have a lower variance. Empirical models tend to have lower bias but higher variance because can be more flexible.
 
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+4
+
+## Explanation
+I think these were okay. I was very confident answering all of the question except for the bias-variance trade-off. I feel like we talked about that only a little bit in class last quarter, so I definitely needed a refresher on what that was. 
 
 :::
+
 
 ### Question 5 
 
@@ -173,6 +225,19 @@ Regression predicts continuous values using independent variables, such as predi
 
 Classification predicts categories by using a decision boundary to separate the data into the different classes. 
 
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+This was fine because we did a lot of regression and classification problems throughout winter quarter. 
+
+:::
+
 :::
 
 ### Question 6 
@@ -183,6 +248,18 @@ When splitting the data, why is it useful to stratify by the outcome/target vari
 ## Solution
 It makes sure that the training and testing sets maintain the same class proportion as the original dataset. This is important as it ensures the model trains on a accurately distributed dataset and it also leads to improved model accuracy. 
 
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+This was a good question and I was pretty confident when answering this. I think that this question tested our knowledge on the homework labs that we did last quarter; I could have elaborated on the consequences if the data is not distributed similarly in both datasets, such as leading to overfitting or underfitting, but I feel like I knew the content very well. 
+
+:::
 
 :::
 
@@ -197,6 +274,17 @@ In v-fold cross validation, the data is split into v equal parts, which are call
 
 V-fold cross validation is used because it provides a more reliable estimate of how the model would perform on new data and it reduces variability, while preventing overfitting to a particular training dataset. 
 
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+4
+
+## Explanation
+I felt confident answering this question since I understood both the process and purpose of v-fold cross-validation with repeats. My answer covered the key idea of generating multiple out-of-sample RMSE estimates and averaging them for a more reliable measure of performance. While my solution was concise and correct, I could have included slightly more detail about the role of repeats in reducing variability.
+
+:::
 
 :::
 
@@ -208,6 +296,18 @@ When might we use a bootstrap resampling procedure instead of v-fold cross valid
 ## Solution
 
 We might use a bootstrap resampling procedure instead of v-fold cross-validation when the dataset is small. In bootstrap sampling, we repeatedly sample with replacement from the dataset to create many training sets, allowing each observation to be used multiple times. It is also used when the population distribution is unknown, or when parametric assumptions (like normality) cannot be me. 
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+4
+
+## Explanation
+I was less confident on this question since bootstrap resampling was not something we spent much time on last quarter. I remember speaking with my professor about it last quarter when discussing my final project, so I was able to recall the general idea and give a reasonable use case. I did need a refresher on what this was and my explanation lacked  confidence and depth compared to other topics.
+
+:::
 
 :::
 
@@ -221,6 +321,18 @@ Model tuning is the process of selecting the best values for a model’s hyperpa
 
 Model tuning is used to improve the model’s performance by ensuring that the optimal hyperparameters are chosen. This helps reduce overfitting or underfitting.
 
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+I felt pretty confident answering this because our professor last quarter really emphasized model tuning and understanding what goes on underneath the surface. I probably could've have given examples of hyperparameters that could be tuned such as learning rate, trees, min_n, but besides that I understood the content very well. 
+
+:::
+
 :::
 
 ### Question 10 
@@ -230,8 +342,6 @@ What are two common performance metrics when dealing with a regression ML proble
 ::: {.callout-tip icon="false"}
 ## Solution
 RMSE, MAE
-
-
 :::
 
 What are two common performance metrics when dealing with a classification ML problem?
@@ -240,6 +350,17 @@ What are two common performance metrics when dealing with a classification ML pr
 ## Solution
 
 Accuracy and ROC AUC
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+Question 10 was definitely easy since we used these metrics every week last quarter. 
 :::
 
 ### Question 11
@@ -254,7 +375,6 @@ A company with a subscription based service (for example Netflix, Disney+, New Y
 ## Solution
 Inferential. We are trying to see if a higher number of service calls impacts a customer's likelihood of churn in the next month, hence the goal is to understand the relationship between these two variables. 
 
-
 :::
 
 2. How likely is it that a customer will churn in the next month (leave the company/drop the service)?
@@ -263,6 +383,16 @@ Inferential. We are trying to see if a higher number of service calls impacts a 
 ## Solution
 Prediction. The goal here is to use the given data to predict the likelihood that a customer will churn in the next month. 
 
-
 :::
 
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+I practiced a lot of these for the quizzes last quarter, so I think I was confident in answering these types of questions. 
+
+:::
