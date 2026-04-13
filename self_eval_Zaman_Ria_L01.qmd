@@ -3,8 +3,8 @@ title: "Self Evaluation L01 Review"
 subtitle: |
   | Data Science 2 with R 
   | STAT 301-2
-author: "YOUR NAME"
-pagetitle: "Self Evaluation PQ2 YOUR NAME"
+author: "Ria Zaman"
+pagetitle: "Self Evaluation PQ2 Ria Zaman"
 date: today
 
 format:
